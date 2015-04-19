@@ -1,9 +1,25 @@
-// Copyright (c) 2015, Alex Kott and Alina Beck. All rights reserved. Use of this source code
-// is governed by a BSD-style license that can be found in the LICENSE file.
+/*
+    Room Engine - User-friendly engine for simple point-and-click games
+    Copyright (C) 2015  Alex Kott, Alina Beck
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 import 'classes/room.dart';
 import 'classes/gamedata.dart';
 import 'classes/canvas.dart';
+import 'classes/interface-room.dart';
 
 
 void main() {
@@ -11,8 +27,8 @@ void main() {
   Canvas.create();
   
   GameData.initialise();
-
-  Room.setRoom('bedroom');
+  
+  InterfaceRoom.initialise();
 }
 
 

@@ -26,11 +26,11 @@ abstract class Canvas {
   }
   
   static create() {
-    DivElement main = querySelector('#main');
+    DivElement canvasDiv = querySelector('#canvas');
     CanvasElement canvas = new CanvasElement(width: canvasWidth, height: canvasHeight);
     _context = canvas.context2D;
     canvas.addEventListener('mousedown', _getPosition, false);
-    main.append(canvas);
+    canvasDiv.append(canvas);
   } 
   
   // MOUSE EVENTS

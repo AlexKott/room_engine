@@ -1,5 +1,6 @@
 library Room;
 
+import 'dart:html';
 import 'gamedata.dart';
 import 'gamestate.dart';
 import 'item.dart';
@@ -116,10 +117,14 @@ abstract class Room {
     _clearRoom();
     _items.clear();
     _name = roomName;
+    
+    var roomInput = querySelector('#toolbar-room>.room-name');
+    roomInput.value = roomName;
+    
     _roomItems = _rooms[roomName]['items'];
     _decorateRoom();
   }
-  
+
   static roomAction(int clickX, int clickY) {
     
     int itemsLength = items.length;

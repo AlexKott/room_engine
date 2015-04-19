@@ -1,20 +1,54 @@
 <!DOCTYPE html>
-
 <!--
-  Copyright (c) 2015, Alex Kott and Alina Beck. All rights reserved. Use of this source code
-  is governed by a BSD-style license that can be found in the LICENSE file.
--->
+    Room Engine - User-friendly engine for simple point-and-click games
+    Copyright (C) 2015  Alex Kott, Alina Beck
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Rooms</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Rooms</title>
 </head>
 
 <body>
 
-<div id="main"></div>
+<div id="toolbar">
+
+
+  <div id="toolbar-room">
+    <select class="select-room">
+      <option value=""></option>
+    </select>
+    
+    <button class="new-room">+</button> <br><br>
+    
+    <label>Name: </label><input type="text" class="room-name" value="">
+    
+    
+    
+  </div>
+  
+  
+  
+  <div id="toolbar-item" style="display:none"></div>
+
+
+</div>
+
+<div id="canvas"></div>
 <div id="status">Loading ...</div>
 
 <script type="application/dart" src="main.dart"></script>
