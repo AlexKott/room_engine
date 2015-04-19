@@ -1,0 +1,36 @@
+{
+  "bedroom": {
+
+    "bed": {
+      "text":"Feels like you've just fallen asleep when your phone starts ringing. It's light outside, but still quite early.",
+      "options":[
+        {"answer":"Fine, I'll get it."},
+        {"later":"Leave me alone, I need to sleep!"}],
+      "impact":{
+        "answer":{"gamestate":"answeredPhone", "message":"phoneMum"},
+        "later":{"choice":"noPhone"}}
+    },
+
+    "noPhone": {
+      "text": "Your phone is ringing again. Might be urgent. Or, you know, someone just really likes to annoy you.",
+      "options":[
+        {"answer":"I guess I'll have to get it."},
+        {"later":"No, no, no!"}],
+      "impact":{
+        "answer":{"gamestate":"answeredPhone", "message":"phoneMum"},
+        "later":{"choice":"noPhone"}}
+    }
+  },
+
+  "kitchen": {
+
+    "fridge": {
+      "text":"The fridge is almost empty. But there is some milk left. It smells weird.",
+      "options":[
+        {"drinkMilk":"I'll have some."},
+        {"exit":"Ugh, no thanks."}],
+      "impact":{
+        "drinkMilk":{"exitText":"You spit the spoiled milk all over the kitchen floor. You'll have to clean that some time. Right now, however, you're longing for a sip of fresh water."}}
+    }
+  }
+}

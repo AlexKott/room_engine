@@ -1,0 +1,127 @@
+{
+  "bedroom":{
+
+    "items":{
+
+      "furniture":[
+
+        {"name":"bed",
+          "posX":300,
+          "posY":100}
+      ],
+
+      "gadgets":[
+
+        {"name":"phone",
+          "posX":530,
+          "posY":33}
+      ],
+
+      "doors":{
+
+        "kitchen":{
+          "posX":100,
+          "posY":0}
+      }
+    }
+  },
+
+  "kitchen":{
+
+    "items":{
+
+      "furniture":[
+
+        {"name":"fridge",
+          "posX":100,
+          "posY":300},
+
+        {"name":"sink",
+          "posX":200,
+          "posY":0}
+      ],
+
+      "doors":{
+
+        "bedroom":{
+          "posX":0,
+          "posY":150},
+
+        "street":{
+          "state":"answeredPhone",
+          "posX":500,
+          "posY":150}
+      }
+    }
+  },
+
+  "street":{
+
+    "items":{
+
+      "gadgets":[
+
+        {"name":"milkCan",
+          "posX":150,
+          "posY":300}
+      ],
+
+      "doors":{
+
+        "kitchen":{
+          "posX":200,
+          "posY":300},
+
+        "grandmaHouse":{
+          "posX":300,
+          "posY":0}
+      }
+    }
+  },
+
+  "grandmaHouse":{
+
+    "items":{
+
+      "furniture":[
+
+        {"name":"bed",
+          "posX":300,
+          "posY":0},
+
+        {"name":"sofa",
+          "posX":0,
+          "posY":100},
+
+        {"name":"fridge",
+          "posX":400,
+          "posY":300}
+      ],
+
+      "gadgets":[
+
+        {"name":"phone",
+          "posX":550,
+          "posY":230},
+
+        {"name":"milkCan",
+          "posX":350,
+          "posY":350}
+      ],
+
+      "persons":[
+
+        {"name":"grandma",
+          "posX":200,
+          "posY":100}
+      ],
+
+      "doors":{
+
+        "street":{
+          "posX":200,
+          "posY":300}
+      }
+    }
+  }
+}

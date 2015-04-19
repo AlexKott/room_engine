@@ -1,0 +1,12 @@
+{
+  "drankWater": {
+    "states": [
+      "gameLoaded"
+    ]
+  },
+  "answeredPhone": {
+    "states":[
+      "drankWater"
+    ]
+  }
+}
